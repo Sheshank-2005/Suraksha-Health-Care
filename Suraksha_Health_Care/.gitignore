@@ -1,0 +1,20 @@
+# Environment secrets
+.env
+.env.*
+!.env.example
+
+#Python files
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+#Private files and databases
+private_uploads/
+*.db
+*.sqlite
+*.sqlite3
+
+# Duplicate and backup files
+* - Copy*
+*- Copy*

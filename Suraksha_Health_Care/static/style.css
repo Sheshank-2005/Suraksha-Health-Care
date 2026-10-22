@@ -1,0 +1,366 @@
+:root{--bg:#07111f;--panel:#0d1b2a;--panel2:#112337;--text:#eef5ff;--muted:#91a5bb;--accent:#5dd6c0;--accent2:#73a7ff;--danger:#ff6b7a;--border:rgba(255,255,255,.1);--shadow:0 18px 50px rgba(0,0,0,.24)}*{box-sizing:border-box}body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;background:linear-gradient(135deg,#06101c,#0a1727 55%,#0c1b2d);color:var(--text);min-height:100vh}.topbar{height:68px;display:flex;align-items:center;justify-content:space-between;padding:0 24px;border-bottom:1px solid var(--border);background:rgba(5,15,27,.88);backdrop-filter:blur(18px);position:sticky;top:0;z-index:20}.brand{font-weight:800;letter-spacing:.2px;display:flex;align-items:center;gap:10px}.brand-mark{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;background:rgba(93,214,192,.14);color:var(--accent)}.top-actions{display:flex;align-items:center;gap:12px}.user{color:#cbd8e6}.layout{display:flex;min-height:calc(100vh - 68px)}.sidebar{width:230px;padding:18px 12px;border-right:1px solid var(--border);background:rgba(6,15,26,.7);position:sticky;top:68px;height:calc(100vh - 68px)}.nav{width:100%;border:0;background:transparent;color:var(--muted);padding:13px 14px;border-radius:12px;text-align:left;font-size:14px;cursor:pointer;margin-bottom:5px}.nav:hover,.nav.active{background:rgba(115,167,255,.11);color:#fff}.content{flex:1;padding:30px;max-width:1500px;width:100%;margin:auto}.section{display:none}.section.active{display:block}.hero{display:flex;justify-content:space-between;gap:20px;align-items:flex-end;padding:28px;border:1px solid var(--border);border-radius:22px;background:linear-gradient(135deg,rgba(115,167,255,.12),rgba(93,214,192,.08));box-shadow:var(--shadow)}h1{font-size:32px;margin:5px 0 8px}h2{font-size:18px;margin:0}h3{margin-top:26px}.hero p,.muted{color:var(--muted);line-height:1.6}.eyebrow{font-size:12px;color:var(--accent);letter-spacing:2px;font-weight:800}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:18px 0}.small-stats{grid-template-columns:repeat(3,1fr)}.stat{padding:20px;border:1px solid var(--border);background:rgba(13,27,42,.75);border-radius:18px}.stat span{display:block;color:var(--muted);font-size:13px}.stat strong{display:block;font-size:30px;margin-top:7px}.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:18px}.panel{background:rgba(13,27,42,.82);border:1px solid var(--border);border-radius:18px;padding:20px;box-shadow:0 10px 35px rgba(0,0,0,.12)}.panel-head,.section-head{display:flex;align-items:center;justify-content:space-between;gap:15px}.section-head{margin-bottom:18px}.quick{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:14px}.quick button{padding:14px;border-radius:12px;border:1px solid var(--border);background:var(--panel2);color:#fff;cursor:pointer}.status-ok{color:var(--accent);font-weight:700;margin:14px 0}.btn{border:1px solid var(--border);padding:10px 15px;border-radius:11px;color:#fff;background:var(--panel2);cursor:pointer;text-decoration:none;display:inline-block}.btn.primary{background:linear-gradient(135deg,#4bcab5,#5797f5);border:0}.btn.ghost{background:transparent}.toolbar{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:14px}.toolbar input,.toolbar select,.compact-input{min-height:40px}.toolbar input,.toolbar select,.compact-input,input,select,textarea{width:100%;border:1px solid var(--border);background:#081522;color:#eef5ff;border-radius:10px;padding:11px;outline:none}.toolbar>input{flex:1;min-width:210px}.toolbar>select,.toolbar>button{width:auto}.table-wrap{overflow:auto}.table-wrap table{width:100%;border-collapse:collapse;min-width:760px}th,td{text-align:left;padding:13px 12px;border-bottom:1px solid var(--border);font-size:13px;vertical-align:top}th{color:#9eb2c9;font-weight:700}td{color:#e6edf5}.actions-inline{display:flex;gap:6px;flex-wrap:wrap}.mini{border:1px solid var(--border);background:#14273a;color:#fff;padding:6px 9px;border-radius:8px;cursor:pointer;font-size:12px}.mini.danger{color:#ff9ba6}.badge{display:inline-block;padding:5px 8px;border-radius:999px;font-size:11px;background:#23354a}.badge.scheduled,.badge.low{color:#7ee5c9;background:rgba(93,214,192,.12)}.badge.completed{color:#8bb6ff;background:rgba(115,167,255,.12)}.badge.cancelled,.badge.no-show,.badge.high{color:#ff9ca7;background:rgba(255,107,122,.12)}.badge.medium{color:#ffd37d;background:rgba(255,190,80,.12)}.badge.urgent,.badge.emergency{color:#fff;background:#b83246}.modal{position:fixed;inset:0;background:rgba(0,0,0,.65);display:none;align-items:center;justify-content:center;padding:20px;z-index:50}.modal.open{display:flex}.modal-card{width:min(680px,100%);max-height:90vh;overflow:auto;background:#0b1b2b;border:1px solid var(--border);border-radius:20px;padding:22px;box-shadow:var(--shadow)}.modal-card.large{width:min(1000px,100%)}.modal-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px}.modal-head button,.notifications-panel button{border:0;background:transparent;color:#fff;font-size:25px;cursor:pointer}.form-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.form-grid label,label{display:flex;flex-direction:column;gap:7px;color:#b9c8d8;font-size:13px}.wide{grid-column:1/-1}.actions{display:flex;justify-content:flex-end;flex-direction:row!important;gap:9px;margin-top:5px}.form-grid textarea{resize:vertical}.empty{padding:22px;text-align:center;color:#71869b}.result{min-height:250px}.result-card{display:grid;gap:12px}.result-risk{font-size:38px;font-weight:800;color:var(--accent)}.detail-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.detail-item{padding:13px;background:#0e2438;border:1px solid var(--border);border-radius:12px}.detail-item small{display:block;color:var(--muted);margin-bottom:5px}.timeline{position:relative;padding-left:24px}.timeline:before{content:'';position:absolute;left:6px;top:4px;bottom:4px;width:2px;background:#29435e}.timeline-item{position:relative;padding:0 0 20px 20px}.timeline-dot{position:absolute;left:-2px;top:4px;width:14px;height:14px;border-radius:50%;background:var(--accent);border:3px solid #0b1b2b}.timeline-item small{display:block;color:var(--muted)}.timeline-item strong{display:block;margin-top:4px}.timeline-item p{color:#9eb0c1;margin:5px 0}.history-panel{margin-top:18px}.analytics-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.chart h2{margin-bottom:20px}.bar-row{margin:14px 0}.bar-label{display:flex;justify-content:space-between;margin-bottom:6px;color:#c9d7e5}.bar-track{height:10px;border-radius:99px;background:#172a3e;overflow:hidden}.bar-fill{height:100%;background:linear-gradient(90deg,var(--accent),var(--accent2));border-radius:99px}.icon-btn{position:relative;border:1px solid var(--border);background:#112337;color:#fff;border-radius:10px;padding:9px 11px;cursor:pointer}.notif-count{position:absolute;top:-7px;right:-7px;background:var(--danger);font-size:10px;min-width:18px;height:18px;border-radius:99px;display:grid;place-items:center}.notifications-panel{position:fixed;right:20px;top:76px;width:min(390px,calc(100vw - 40px));background:#0b1b2b;border:1px solid var(--border);border-radius:16px;box-shadow:var(--shadow);padding:15px;z-index:45;display:none}.notifications-panel.open{display:block}.notification-list{display:grid;gap:8px;max-height:60vh;overflow:auto}.notification{padding:12px;border-radius:11px;background:#112337;border:1px solid var(--border)}.notification b,.notification span{display:block}.notification span{font-size:12px;color:var(--muted);margin-top:4px}.notification.warning{border-color:rgba(255,107,122,.35)}.toast{position:fixed;right:20px;bottom:20px;background:#12263a;color:#fff;padding:12px 16px;border:1px solid var(--border);border-radius:10px;transform:translateY(20px);opacity:0;pointer-events:none;transition:.2s;z-index:100}.toast.show{transform:translateY(0);opacity:1}.compact-input{max-width:230px;min-width:160px}.login-body{display:grid;place-items:center;min-height:100vh}.login-card{width:min(430px,calc(100% - 32px));padding:30px;background:rgba(13,27,42,.9);border:1px solid var(--border);border-radius:22px;box-shadow:var(--shadow)}
+@media(max-width:1050px){.sidebar{width:190px}.stats{grid-template-columns:repeat(2,1fr)}.analytics-grid{grid-template-columns:1fr}}@media(max-width:760px){.topbar{padding:0 14px}.layout{display:block}.sidebar{position:static;width:100%;height:auto;display:flex;overflow:auto;padding:8px;border-right:0;border-bottom:1px solid var(--border)}.nav{min-width:max-content;margin:0}.content{padding:18px}.hero{align-items:flex-start;flex-direction:column}h1{font-size:26px}.grid2{grid-template-columns:1fr}.stats,.small-stats{grid-template-columns:1fr 1fr}.form-grid{grid-template-columns:1fr}.detail-grid{grid-template-columns:1fr 1fr}.section-head{align-items:flex-start;flex-direction:column}.toolbar{display:grid;grid-template-columns:1fr 1fr}.toolbar>input{min-width:0}.toolbar>button,.toolbar>select{width:100%}.top-actions .user{display:none}}@media(max-width:480px){.stats,.small-stats,.detail-grid,.quick{grid-template-columns:1fr}.toolbar{grid-template-columns:1fr}.actions{flex-direction:column!important}.actions .btn{width:100%}}
+.language-select{width:auto!important;min-width:96px!important;padding:8px 10px!important}.login-top{display:flex;justify-content:space-between;align-items:center;gap:12px}.role-hint{font-size:11px}.global-search{position:fixed;top:78px;left:50%;transform:translateX(-50%);width:min(520px,calc(100vw - 40px));z-index:30}.global-search input{background:rgba(8,21,34,.96);backdrop-filter:blur(16px)}.global-results{display:none;margin-top:6px;background:#0b1b2b;border:1px solid var(--border);border-radius:14px;padding:8px;box-shadow:var(--shadow);max-height:360px;overflow:auto}.global-results.open{display:grid;gap:4px}.global-results>div:not(.empty){padding:10px;border-radius:9px;background:#112337}.global-results span{display:block;color:var(--muted);font-size:11px;margin-top:3px}.doctor-panel{margin-top:18px}.doctor-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.doctor-card{padding:18px;border:1px solid var(--border);border-radius:14px;background:#102438}.doctor-card b{display:block;font-size:28px}.doctor-card span{color:var(--muted);font-size:12px}.danger-card{border-color:rgba(255,107,122,.35)}.doctor-list{grid-column:1/-1;display:grid;gap:7px}.doctor-list>div{padding:10px;border-radius:10px;background:#0e2438}.doctor-list span{display:block;color:var(--muted);font-size:12px;margin-top:3px}.risk-profile{padding:10px}.risk-score{display:grid;grid-template-columns:1fr auto auto;align-items:center;gap:14px;padding:18px;border-radius:15px;background:#102438;border:1px solid var(--border)}.risk-score strong{font-size:34px}.risk-score b{padding:7px 10px;border-radius:999px;background:rgba(93,214,192,.12);color:var(--accent)}.risk-score.medium b{background:rgba(255,190,80,.12);color:#ffd37d}.risk-score.high b{background:rgba(255,107,122,.12);color:#ff9ca7}.reason-list{display:grid;gap:7px;margin-top:12px;color:#b9c8d8;font-size:13px}.assistant-chat{height:220px;overflow:auto;display:grid;align-content:start;gap:8px;padding:10px;background:#081522;border-radius:12px;margin:12px 0}.assistant-msg{padding:9px 11px;border-radius:12px;max-width:90%;font-size:13px}.assistant-msg.bot{background:#132a40;justify-self:start}.assistant-msg.user-msg{background:linear-gradient(135deg,#4bcab5,#5797f5);justify-self:end}.assistant-row{display:flex;gap:8px}.assistant-row input{flex:1}.trend-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.trend-card{padding:12px;border:1px solid var(--border);border-radius:12px;background:#0e2438}.trend-value{display:flex;justify-content:space-between;gap:8px;margin-top:10px;padding-top:8px;border-top:1px solid var(--border)}.trend-value span{color:var(--muted);font-size:10px}.summary-box{min-height:100px}.summary-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.summary-grid div{padding:13px;background:#0e2438;border:1px solid var(--border);border-radius:12px}.summary-grid b,.summary-grid span{display:block}.summary-grid span{color:var(--muted);font-size:11px;margin-top:4px}@media(max-width:760px){.global-search{top:72px}.doctor-grid,.trend-grid,.summary-grid{grid-template-columns:1fr 1fr}.risk-score{grid-template-columns:1fr}.global-search{width:calc(100vw - 24px)}}@media(max-width:480px){.doctor-grid,.trend-grid,.summary-grid{grid-template-columns:1fr}.top-actions .language-select{min-width:82px!important}.global-search{position:absolute}}
+
+/* Respect role-based visibility even when component styles define display values. */
+[hidden]{display:none!important}
+
+
+/* Role-specific workspace treatment */
+.role-hero{gap:24px;align-items:center}.role-hero h1{letter-spacing:-.035em}.role-hero-actions{display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-end}.role-administrator{background:linear-gradient(125deg,#10243d,#285b84)}.role-doctor{background:linear-gradient(125deg,#123c3a,#1b8078)}.role-receptionist{background:linear-gradient(125deg,#40305f,#7955a6)}.role-hero .eyebrow{letter-spacing:.13em}.role-hero p{max-width:650px}@media(max-width:760px){.role-hero-actions{justify-content:flex-start}.role-hero{align-items:flex-start}}
+
+/* Suraksha Health Care visual refresh — clean hospital dashboard inspired by the supplied reference */
+:root{--bg:#f2f6fc;--panel:#ffffff;--panel2:#f6f9ff;--text:#1d2d45;--muted:#75849a;--accent:#1768e8;--accent2:#5d9cf6;--danger:#e34e61;--border:#e3eaf4;--shadow:0 8px 24px rgba(28,58,105,.07)}
+html{scroll-behavior:smooth}body{background:#f2f6fc;color:var(--text);font-family:Inter,"Segoe UI",Arial,sans-serif;font-size:14px}.topbar{height:66px;background:#1768e8;border:0;color:#fff;padding:0 28px;box-shadow:0 3px 14px rgba(23,104,232,.18);position:sticky;top:0;z-index:35}.brand{font-weight:800;letter-spacing:-.03em;font-size:20px}.brand-mark{background:#fff;color:#1768e8;border-radius:11px;width:31px;height:31px;display:grid;place-items:center;font-size:20px}.top-actions{gap:10px}.top-actions .user{color:#eaf2ff;font-size:12px}.topbar .btn.ghost{color:#fff;border-color:rgba(255,255,255,.35);background:rgba(255,255,255,.1)}.topbar .icon-btn{color:#fff;border-color:rgba(255,255,255,.28);background:rgba(255,255,255,.12)}.global-search{top:78px}.global-search input{background:#fff;color:#24364f;border-color:#dfe8f5;box-shadow:0 4px 16px rgba(28,58,105,.08)}.global-results,.notifications-panel{background:#fff;color:#1d2d45;border-color:#e3eaf4;box-shadow:0 16px 40px rgba(28,58,105,.15)}.notification,.global-results>div:not(.empty){background:#f5f8fe;border-color:#e4ebf6}.notifications-panel button{color:#1d2d45}
+.layout{max-width:1600px;margin:0 auto;display:flex;gap:0;min-height:calc(100vh - 66px)}.sidebar{width:230px;flex:0 0 230px;height:calc(100vh - 66px);top:66px;position:sticky;overflow:auto;background:#fff;border-right:1px solid #e4ebf5;padding:20px 13px}.nav{color:#63748b;border:0;border-radius:10px;margin:3px 0;padding:12px 13px;font-weight:600;background:transparent;transition:all .18s}.nav:hover{background:#f0f5ff;color:#1768e8}.nav.active{background:#eaf2ff;color:#1768e8;box-shadow:inset 3px 0 #1768e8}.content{flex:1;min-width:0;padding:28px clamp(18px,3vw,42px);max-width:1400px;margin:0 auto}.section{animation:fadeIn .22s ease}.section h1{color:#1c2f4a;letter-spacing:-.04em;font-size:27px}.section h2{color:#263c58;font-size:16px;letter-spacing:-.02em}.muted{color:#8290a4}.hero{border:0;border-radius:20px;padding:28px 30px;box-shadow:0 12px 28px rgba(23,104,232,.14);overflow:hidden;position:relative;min-height:174px}.role-hero{display:flex;justify-content:space-between}.role-administrator,.role-doctor,.role-receptionist{background:linear-gradient(112deg,#1768e8 0%,#2e82f4 65%,#72b5ff 100%);color:white}.role-hero h1{font-size:30px;color:white;margin:8px 0}.role-hero p{color:rgba(255,255,255,.88);line-height:1.6;max-width:600px}.role-hero .eyebrow{color:#dceaff;font-size:10px;font-weight:800;letter-spacing:.15em}.role-hero:after{content:'✚  ⚕  ♡';position:absolute;right:32px;bottom:19px;font-size:45px;letter-spacing:9px;color:rgba(255,255,255,.22);font-weight:800;pointer-events:none}.role-hero-actions{position:relative;z-index:1;align-self:flex-end}.btn{border-radius:10px;font-weight:700;transition:transform .15s,box-shadow .15s}.btn:hover,.quick button:hover{transform:translateY(-1px);box-shadow:0 6px 14px rgba(24,75,145,.12)}.btn.primary{background:#1768e8;border-color:#1768e8;color:white}.role-hero .btn.primary{background:#fff;color:#1768e8;border-color:#fff}.role-hero .btn:not(.primary){background:rgba(255,255,255,.14);color:#fff;border-color:rgba(255,255,255,.35)}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:18px 0}.stat{background:#fff;border:1px solid #e5ecf6;border-radius:15px;padding:18px 19px;box-shadow:0 4px 14px rgba(31,61,107,.035);position:relative;overflow:hidden}.stat:before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:#6aa5fa}.stat span{font-size:12px;color:#77879d;font-weight:600}.stat strong{display:block;color:#1c3555;font-size:29px;line-height:1.3;margin-top:8px;letter-spacing:-.04em}.small-stats .stat strong{font-size:25px}.danger-card:before{background:#e34e61}.panel{background:#fff;border:1px solid #e4ebf5;border-radius:16px;padding:20px;box-shadow:0 5px 18px rgba(31,61,107,.035)}.panel-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:14px}.panel-head h2{margin:0}.grid2{gap:18px}.quick{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.quick button{background:#f4f8ff;border:1px solid #e0eafa;color:#28517f;border-radius:12px;padding:15px;text-align:left;font-weight:700;cursor:pointer;transition:.18s}.quick button:before{content:'↗';display:inline-grid;place-items:center;width:25px;height:25px;margin-right:8px;border-radius:8px;background:#e1edff;color:#1768e8}.status-ok{font-size:12px;color:#178b68;background:#e8f8f1;border-radius:99px;padding:7px 10px;font-weight:700}.toolbar{gap:9px;margin-bottom:15px}.toolbar input,.toolbar select,.compact-input,input,select,textarea{background:#fff;color:#253953;border:1px solid #dce5f1;border-radius:10px}.toolbar input:focus,.toolbar select:focus,input:focus,select:focus,textarea:focus{border-color:#7aaaf6;box-shadow:0 0 0 3px rgba(23,104,232,.09)}.table-wrap{border:1px solid #e7edf6;border-radius:12px}.table-wrap table{min-width:760px}th{background:#f6f9fe;color:#7c8ba0;font-size:11px;text-transform:uppercase;letter-spacing:.055em}th,td{border-bottom:1px solid #edf1f7;padding:13px 12px}td{color:#354862}tbody tr:hover{background:#f8fbff}.mini{background:#f0f5ff;border-color:#e0e9f8;color:#28517f}.badge{font-weight:700}.modal{background:rgba(19,39,68,.42);backdrop-filter:blur(5px)}.modal-card{background:#fff;color:#1d2d45;border:1px solid #e2eaf5;box-shadow:0 24px 70px rgba(20,48,91,.2)}.modal-head button{color:#52647b}.detail-item,.doctor-card,.trend-card,.summary-grid div,.risk-score{background:#f5f8fe;border-color:#e1eaf6;color:#253953}.detail-item small,.trend-value span,.summary-grid span{color:#8290a4}.assistant-chat{background:#f3f7fd}.assistant-msg.bot{background:#e8f1ff;color:#23476f}.assistant-msg.user-msg{color:white}.timeline:before{background:#dce7f6}.timeline-dot{border-color:#fff}.risk-score b{background:#e4f8f0;color:#178b68}.risk-score.medium b{background:#fff4dc;color:#9a6a00}.risk-score.high b{background:#ffeaed;color:#bd3346}.notifications-panel{color:#24364f}.toast{background:#18385f;color:#fff;border:0;box-shadow:0 10px 25px rgba(25,55,100,.2)}
+.analytics-grid{gap:16px}.chart{min-height:230px}.bar-track{background:#e8eef8}.bar-fill{background:linear-gradient(90deg,#1768e8,#66a7ff)}.doctor-card{background:#fff}.doctor-card b{color:#1768e8}.doctor-card span{color:#7e8da2}.risk-profile{color:#24364f}.result-risk{color:#1768e8}.result-card{color:#263b56}.empty{color:#8a98aa}.login-body{background:radial-gradient(circle at 20% 15%,#e1edff,transparent 34%),#f2f6fc}.login-card{background:#fff;border:1px solid #e1e9f5;box-shadow:0 22px 60px rgba(28,58,105,.13);color:#1d2d45}.login-card h1,.login-card h2{color:#1d2d45}.login-card p,.login-card label{color:#718198}
+@keyframes fadeIn{from{opacity:.5;transform:translateY(3px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:1050px){.sidebar{width:205px;flex-basis:205px}.content{padding:22px}.stats{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:760px){.topbar{padding:0 14px}.layout{display:block}.sidebar{position:static;width:100%;height:auto;display:flex;overflow:auto;padding:8px;border-right:0;border-bottom:1px solid #e4ebf5}.nav{min-width:max-content;margin:0 3px}.content{padding:16px}.hero{padding:22px}.role-hero:after{right:15px;font-size:30px}.role-hero-actions{justify-content:flex-start}.stats,.small-stats{grid-template-columns:repeat(2,minmax(0,1fr))}.grid2,.analytics-grid{grid-template-columns:1fr}.section-head{align-items:flex-start;flex-direction:column}.top-actions .user{display:none}.global-search{top:74px}}@media(max-width:480px){.stats,.small-stats,.detail-grid,.quick,.doctor-grid,.trend-grid,.summary-grid{grid-template-columns:1fr}.hero{min-height:0}.role-hero:after{display:none}.stats .stat{padding:14px}.stat strong{font-size:24px}.content{padding:12px}.panel{padding:14px}}
+@media print{.topbar,.sidebar,.global-search,.notifications-panel,.btn,.toolbar{display:none!important}.layout{display:block}.content{padding:0;max-width:none}.section{display:block!important}.panel,.stat{box-shadow:none;break-inside:avoid}}
+/* Language selector shared by dashboard and account pages */
+.language-select{width:auto!important;min-width:100px!important;max-width:130px;padding:8px 10px!important;background:#102438;color:var(--text,#eef5fb);border:1px solid var(--border,#29445a);border-radius:10px;font:inherit;cursor:pointer}
+/* Patient health timeline additions */
+.timeline-full{margin-top:22px;padding:8px 0 0 8px}.timeline-event-card{background:var(--panel2,#f5f8fe);border:1px solid var(--border,#e1eaf6);border-radius:12px;padding:14px 16px;margin-top:7px}.timeline-event-card strong{font-size:15px}.timeline-event-card p{line-height:1.55;overflow-wrap:anywhere}.timeline-type{display:inline-block;margin:7px 0 0;padding:4px 8px;border-radius:999px;background:rgba(115,167,255,.12);font-size:11px;color:var(--accent,#1768e8);font-weight:700}.summary-box{margin:14px 0}.summary-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px}.summary-grid>div{display:flex;flex-direction:column;gap:5px;padding:12px;background:var(--panel2,#f5f8fe);border:1px solid var(--border,#e1eaf6);border-radius:10px}.summary-grid span{font-size:12px;color:var(--muted,#8290a4)}.summary-grid b{overflow-wrap:anywhere}@media(max-width:650px){.timeline-full{padding-left:0}.timeline-event-card{padding:12px}.section-head{align-items:flex-start;flex-direction:column}.summary-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+.feature-form{display:flex;flex-wrap:wrap;gap:12px;align-items:end;padding:16px}.feature-form label{display:flex;flex-direction:column;gap:6px;min-width:150px;flex:1}.feature-form input,.feature-form select{padding:10px;border:1px solid var(--line,#dbe4ed);border-radius:9px;background:var(--panel,#fff);color:inherit}.feature-form .btn{align-self:end}.section .panel{margin-bottom:16px}
+
+/* Suraksha Health Care visual refresh: calm clinical palette, clearer hierarchy, responsive panels */
+:root{--bg:#f4f7fb;--panel:#ffffff;--panel2:#f7fafc;--text:#15263d;--muted:#718198;--accent:#087f8c;--accent2:#2563eb;--danger:#d64555;--border:#e2e9f1;--shadow:0 12px 34px rgba(25,45,75,.07)}
+body{background:#f4f7fb;color:#15263d;font-family:Inter,"Segoe UI",system-ui,sans-serif;line-height:1.5}
+.topbar{height:auto;min-height:72px;padding:13px clamp(14px,3vw,34px);background:rgba(255,255,255,.94);color:#14263d;border-bottom:1px solid #e2e9f1;box-shadow:0 4px 22px rgba(30,55,85,.05);backdrop-filter:blur(18px)}
+.brand{font-size:21px;color:#14263d}.brand-mark{background:linear-gradient(145deg,#087f8c,#16a3a0);color:#fff;border-radius:12px;box-shadow:0 6px 14px rgba(8,127,140,.2)}.top-actions .user{color:#51657d}.topbar .btn.ghost{color:#38506a;background:#fff;border-color:#dce5ee}.topbar .icon-btn{color:#31516c;background:#f5f8fb;border-color:#dce5ee}.language-select{background:#fff!important;color:#253b53!important;border-color:#dce5ee!important}
+.layout{max-width:1800px}.sidebar{width:248px;flex-basis:248px;background:#fff;border-right:1px solid #e3eaf2;padding:20px 14px}.nav{color:#607187;border-radius:11px;padding:11px 13px;font-size:13px}.nav:hover{background:#eef8f8;color:#087f8c}.nav.active{background:#e7f6f5;color:#087f8c;box-shadow:inset 3px 0 #0c9398}.content{padding:clamp(18px,3vw,40px);max-width:1500px}.section h1{font-size:clamp(25px,2vw,32px);letter-spacing:-.04em;color:#172c45}.section h2{color:#213952}.muted{color:#718198}
+.hero{border-radius:22px;padding:clamp(24px,3vw,38px);box-shadow:0 16px 34px rgba(8,91,112,.12);background:linear-gradient(120deg,#075b68 0%,#087f8c 54%,#2aa6a0 100%)}.role-administrator,.role-doctor,.role-receptionist{background:linear-gradient(120deg,#075b68 0%,#087f8c 54%,#2aa6a0 100%)}.role-hero h1{font-size:clamp(28px,2.5vw,36px);letter-spacing:-.045em}.role-hero:after{content:'✚';font-size:110px;right:70px;bottom:-25px;letter-spacing:0;transform:rotate(-12deg);opacity:.6}.role-hero .eyebrow{letter-spacing:.14em}.stats{gap:15px;margin:20px 0}.stat{border-radius:17px;padding:20px;border-color:#e2e9f1;box-shadow:0 7px 22px rgba(25,45,75,.035)}.stat:before{width:4px;background:#0e9996}.stat span{color:#708198}.stat strong{color:#172c45;font-size:31px}.danger-card:before{background:#d64555}.panel{background:#fff;border:1px solid #e2e9f1;border-radius:18px;padding:22px;box-shadow:0 7px 24px rgba(25,45,75,.035)}.panel-head{margin-bottom:18px}.grid2{gap:20px}.btn{border-radius:11px;padding:10px 15px;border:1px solid #dbe5ee;background:#fff;color:#2e4861;font-weight:700}.btn.primary{background:#087f8c;border-color:#087f8c;color:#fff;box-shadow:0 5px 12px rgba(8,127,140,.14)}.btn.primary:hover{background:#066b76}.btn:disabled{opacity:.65;cursor:wait;transform:none}.quick button{background:#f7fbfc;border-color:#e0ecee;color:#294a5c;border-radius:13px;padding:15px}.quick button:before{background:#e0f4f2;color:#087f8c}.status-ok{background:#e7f7f0;color:#16805e}.toolbar input,.toolbar select,input,select,textarea{border-color:#dbe4ed;border-radius:11px;color:#233a53;background:#fff;padding:10px 12px}input:focus,select:focus,textarea:focus{outline:none;border-color:#65b8ba!important;box-shadow:0 0 0 3px rgba(8,127,140,.11)!important}label{color:#40566f;font-weight:600}label input,label select,label textarea{margin-top:5px}th{background:#f4f8fb;color:#6d7f94;letter-spacing:.07em}th,td{padding:14px 13px;border-bottom-color:#eaf0f5}tbody tr:hover{background:#f7fbfc}.table-wrap{border-color:#e3eaf1;border-radius:14px}.mini{border-radius:8px}.badge{padding:5px 9px;border-radius:99px}.modal{background:rgba(14,32,53,.48);backdrop-filter:blur(7px)}.modal-card{border-radius:20px;box-shadow:0 28px 80px rgba(20,42,67,.22)}.detail-item,.doctor-card,.trend-card,.summary-grid div,.risk-score{background:#f6fafb;border-color:#e2ecee;border-radius:13px}.toast{background:#16394b;border-radius:12px;box-shadow:0 12px 30px rgba(20,42,67,.2)}
+/* AI screening results and loading/error states */
+#ai .grid2>.panel:first-child{display:flex;flex-direction:column;gap:13px;align-items:stretch}#ai #symptoms{width:100%;resize:vertical;min-height:160px;line-height:1.6}#ai #aiPatient{width:100%}#aiResult{min-height:300px}#aiResult.result{display:block}.ai-loading{display:flex;gap:14px;align-items:center;min-height:240px;justify-content:center;color:#243d54}.spinner{width:28px;height:28px;border:3px solid #d8eeee;border-top-color:#087f8c;border-radius:50%;animation:cs-spin .8s linear infinite;flex:none}.ai-loading p{margin:4px 0 0}.ai-result-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;border-bottom:1px solid #e7eef3;padding-bottom:16px}.ai-result-head h2{font-size:22px;margin:5px 0 0}.ai-kicker{font-size:10px;font-weight:800;letter-spacing:.15em;color:#087f8c}.ai-risk-pill{border-radius:99px;padding:7px 12px;font-size:12px;font-weight:800;white-space:nowrap;background:#e8f7ef;color:#137b55}.ai-risk-pill.medium{background:#fff4df;color:#946300}.ai-risk-pill.high{background:#ffeaed;color:#bd2f43}.ai-score-wrap{padding:16px 0}.ai-score{display:flex;align-items:baseline;gap:5px}.ai-score strong{font-size:42px;letter-spacing:-.05em;color:#17364b}.ai-score span{color:#78899a}.ai-score-track{height:8px;background:#edf2f6;border-radius:99px;overflow:hidden;margin:9px 0}.ai-score-track span{display:block;height:100%;background:#1b9c7c;border-radius:99px}.ai-score-track span.medium{background:#d8a12e}.ai-score-track span.high{background:#d64555}.ai-explanation,.ai-factors,.ai-recommendation{padding:14px 15px;margin:12px 0;border:1px solid #e2eaf0;border-radius:13px;background:#f8fbfc}.ai-explanation p,.ai-recommendation p{margin:6px 0 0;line-height:1.6}.ai-factors ul{margin:8px 0 0;padding-left:20px;display:flex;flex-wrap:wrap;gap:7px 25px}.ai-factors li{padding:2px 0;color:#425a70}.ai-recommendation{background:#edf8f7;border-color:#d5eeeb}.ai-recommendation.urgent{background:#fff0f1;border-color:#f4cfd4}.ai-disclaimer{font-size:11px;line-height:1.6;color:#748499;margin:14px 0 0}.ai-error{padding:18px;border:1px solid #f1cbd0;background:#fff5f6;border-radius:14px;color:#8d2d3a}.ai-error p{line-height:1.55}.history-panel{margin-top:18px}@keyframes cs-spin{to{transform:rotate(360deg)}}
+@media(max-width:900px){.sidebar{width:220px;flex-basis:220px}.content{padding:20px}.role-hero:after{right:25px;font-size:75px}}@media(max-width:760px){.topbar{align-items:flex-start;gap:10px;flex-wrap:wrap}.top-actions{flex-wrap:wrap;justify-content:flex-end}.sidebar{width:100%;height:auto;position:static;display:flex;gap:4px;overflow-x:auto;padding:9px}.nav{min-width:max-content}.content{padding:14px}.role-hero{display:block}.role-hero-actions{margin-top:18px;display:flex;flex-wrap:wrap;gap:8px}.role-hero:after{display:none}.panel{padding:16px}#ai .grid2{grid-template-columns:1fr}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}
+
+
+/* Suraksha Health Care requested color update: light-blue navigation + light-green workspace */
+:root{
+  --bg:#f0faf3;
+  --panel:#ffffff;
+  --panel2:#eaf7ee;
+  --text:#203b31;
+  --muted:#627d70;
+  --accent:#168b79;
+  --accent2:#73b8e8;
+  --border:#d9eae0;
+  --shadow:0 8px 24px rgba(39,91,65,.07);
+}
+body{background:#eff9f1;color:#203b31}
+.topbar{background:#eaf6ff;color:#173e5b;box-shadow:0 3px 14px rgba(71,145,190,.12);border-bottom:1px solid #d4e9f8}
+.brand,.topbar .user{color:#173e5b}
+.brand-mark{background:#d2ebff;color:#176b9a;box-shadow:none}
+.topbar .btn.ghost,.topbar .icon-btn{background:#f8fcff;color:#315b75;border-color:#d3e7f5}
+.sidebar{background:linear-gradient(180deg,#e5f4ff 0%,#d9edff 100%);border-right:1px solid #c9e2f5}
+.nav{color:#365d78}
+.nav:hover{background:#cbe8ff;color:#155c89}
+.nav.active{background:#c5e6ff;color:#075d88;box-shadow:inset 4px 0 #168bb5}
+.content{background:#eff9f1}
+.hero{background:linear-gradient(120deg,#dff3e5 0%,#e9f8ed 55%,#d9f0e1 100%);border-color:#d1e9d9;color:#203b31;box-shadow:0 12px 30px rgba(44,108,70,.09)}
+.hero h1,.hero h2,.hero p,.hero .eyebrow{color:#244b39}
+.role-administrator,.role-doctor,.role-receptionist{background:linear-gradient(120deg,#dff3e5 0%,#e9f8ed 55%,#d9f0e1 100%)}
+.role-hero:after{color:#8bcba1;opacity:.35}
+.stat,.panel{background:#ffffff;border-color:#dcebe0;box-shadow:0 7px 22px rgba(39,91,65,.045)}
+.stat span,.muted,.hero p{color:#627d70}
+.stat strong,.section h1,.section h2{color:#203b31}
+.stat:before{background:#47a875}
+.btn{background:#fff;border-color:#d5e7da;color:#315642}
+.btn.primary{background:#248a63;border-color:#248a63;color:#fff;box-shadow:0 5px 12px rgba(36,138,99,.15)}
+.btn.primary:hover{background:#1b7452}
+.quick button{background:#f2faf4;border-color:#d8ebdd;color:#315642}
+.quick button:before{background:#dff3e5;color:#248a63}
+.toolbar input,.toolbar select,input,select,textarea{background:#fff;color:#243e32;border-color:#d4e5d9}
+th{background:#eef8f0;color:#557363}
+th,td{border-bottom-color:#e4efe7}
+tbody tr:hover{background:#f4fbf5}
+.detail-item,.doctor-card,.trend-card,.summary-grid div,.risk-score{background:#f2faf4;border-color:#dcebe0}
+.modal-card,.notifications-panel{background:#fbfffc;color:#203b31;border-color:#dcebe0}
+.modal-head button,.notifications-panel button{color:#315642}
+.notification{background:#f0f9f2;border-color:#dcebe0}
+.global-results{background:#fbfffc;border-color:#dcebe0}
+.global-results>div:not(.empty){background:#f0f9f2}
+.global-search input{background:#fbfffc}
+.assistant-chat{background:#f0f8f2}
+.assistant-msg.bot{background:#e1f2e6;color:#294c38}
+.assistant-msg.user-msg{background:linear-gradient(135deg,#248a63,#69b4df);color:#fff}
+.bar-track{background:#e1eee5}
+.timeline:before{background:#c6e1ce}
+.timeline-dot{background:#47a875;border-color:#eff9f1}
+.ai-explanation,.ai-factors{background:#f6fbf7;border-color:#dcebe0}
+.ai-recommendation{background:#e8f7ec;border-color:#cce8d4}
+.ai-recommendation.urgent{background:#fff0ef;border-color:#f4d2ce}
+@media(max-width:760px){.sidebar{background:linear-gradient(90deg,#e5f4ff,#d9edff);border-bottom:1px solid #c9e2f5}}
+
+
+/* Suraksha Health Care dark-blue + dark-green theme refresh */
+:root{--suraksha-navy:#12345b;--suraksha-blue:#174a7e;--suraksha-green:#176b45;--suraksha-green-dark:#105437;--suraksha-green-pale:#e1f0e7}
+body{background:#e5edf6!important;color:#18324d}
+.sidebar{background:#12345b!important;border-color:#254a70!important}
+.sidebar .nav{color:#e8f1fb!important;background:transparent!important}
+.sidebar .nav:hover{background:#214b75!important;color:#fff!important}
+.sidebar .nav.active{background:#176b45!important;color:#fff!important;border-left-color:#8bd2a7!important}
+.topbar{background:#174a7e!important;color:#fff!important;border-color:#254a70!important}
+.topbar h1,.topbar .user,.topbar a{color:#fff!important}
+.hero,.role-administrator,.role-doctor,.role-receptionist{background:linear-gradient(120deg,#12345b 0%,#174a7e 52%,#176b45 100%)!important}
+.btn.primary{background:#176b45!important;border-color:#176b45!important;color:#fff!important}
+.btn.primary:hover{background:#105437!important}
+.quick button:before{background:#d5eadc!important;color:#176b45!important}
+.status-ok{background:#d9eee1!important;color:#145b3a!important}
+.stat:before{background:#176b45!important}
+input:focus,select:focus,textarea:focus{border-color:#397baf!important;box-shadow:0 0 0 3px rgba(23,74,126,.15)!important}
+.ai-kicker{color:#176b45!important}.ai-score-track span{background:#176b45!important}.ai-recommendation{background:#e1f0e7!important;border-color:#bddbc8!important}
+
+
+/* Full-screen Suraksha Health Care login: hospital image behind the complete page, with overlay login card */
+.login-body{position:relative;isolation:isolate;display:block;width:100%;min-height:100vh;height:100vh;overflow:hidden;padding:0;background:#071d39;color:#eff7ff}
+.login-body:before{content:"";position:fixed;inset:0;z-index:-2;background:linear-gradient(90deg,rgba(3,22,48,.28) 0%,rgba(3,22,48,.10) 48%,rgba(3,22,48,.28) 100%),url("suraksha-hospital-login.jpg") center center/cover no-repeat}
+.login-body:after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(0deg,rgba(2,17,38,.52),transparent 38%,rgba(2,17,38,.12))}
+.login-hospital-panel{position:absolute;left:clamp(22px,5vw,78px);top:clamp(24px,5vh,68px);bottom:clamp(24px,5vh,68px);width:min(46vw,650px);display:flex;flex-direction:column;justify-content:space-between;padding:0;background:transparent;border:0}
+.login-hospital-panel:after{display:none}
+.login-hospital-brand,.login-hospital-caption{position:relative;z-index:1;max-width:560px;text-shadow:0 2px 18px rgba(0,0,0,.58)}
+.login-hospital-symbol{font-size:clamp(34px,4vw,54px);color:#50e0bd;font-weight:900;line-height:1}
+.login-hospital-name{font-size:clamp(42px,5.3vw,76px);line-height:.98;font-weight:850;letter-spacing:-1.7px;color:#fff;margin-top:14px}
+.login-hospital-name span{color:#50e0bd}
+.login-hospital-brand p{letter-spacing:clamp(1px,.2vw,3px);font-size:clamp(10px,1vw,13px);font-weight:800;color:#f0fbff;margin-top:22px}
+.login-hospital-caption{font-size:clamp(16px,1.7vw,24px);font-weight:700;color:#fff;max-width:500px}
+.login-card{position:absolute;z-index:2;right:clamp(24px,5vw,82px);top:50%;transform:translateY(-50%);width:min(42vw,520px);max-height:calc(100vh - 40px);overflow-y:auto;margin:0;padding:clamp(24px,3vw,42px);border:1px solid rgba(255,255,255,.78);border-radius:24px;background:rgba(249,252,255,.96);color:#18324d;box-shadow:0 24px 80px rgba(0,0,0,.34);backdrop-filter:blur(18px)}
+.login-card .muted{color:#60768e}.login-card input{width:100%;margin-top:7px;background:#fff;color:#152d47;border:1px solid #cbd8e6;border-radius:11px;padding:13px 14px}.login-card label{display:block;font-weight:650;color:#243c55}.login-card .btn.primary{width:100%;border:0;border-radius:11px;padding:14px;background:linear-gradient(100deg,#073b70,#075a7d);color:#fff;font-weight:750;cursor:pointer}.login-card a{color:#075b83}.login-card .brand{color:#123c63}.login-card .brand-mark{background:#d9f8ed;color:#087d70}
+@media(max-width:900px){.login-body{height:auto;min-height:100vh;overflow:auto;padding:24px 0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:22px}.login-body:before{position:fixed;background:linear-gradient(90deg,rgba(3,22,48,.52),rgba(3,22,48,.38)),url("suraksha-hospital-login.jpg") center/cover no-repeat}.login-hospital-panel{position:relative;inset:auto;width:calc(100% - 36px);min-height:180px;display:flex;justify-content:center;gap:16px;padding:0}.login-hospital-name{font-size:clamp(38px,8vw,54px)}.login-hospital-brand p{margin-top:12px}.login-hospital-caption{font-size:16px}.login-card{position:relative;top:auto;right:auto;transform:none;width:min(520px,calc(100% - 32px));max-height:none;margin:0 auto;padding:clamp(22px,5vw,32px)}}
+@media(max-width:480px){.login-body{gap:16px;padding:18px 0}.login-hospital-panel{min-height:150px}.login-hospital-name{font-size:36px}.login-hospital-brand p{font-size:10px;letter-spacing:1px}.login-card{padding:22px;border-radius:18px}.login-card h1{font-size:27px}}
+
+
+/* Suraksha Health Care — cohesive dark navy/forest-green clinical theme */
+:root{--bg:#07111f;--panel:#0d1b2a;--panel2:#112337;--text:#edf4fb;--muted:#a6b8ca;--accent:#35c99a;--accent2:#5c9dff;--border:rgba(164,190,214,.18);--shadow:0 18px 50px rgba(0,0,0,.28)}
+body:not(.login-body){background:radial-gradient(ellipse at top left,#102b3b 0%,#081522 45%,#06101b 100%)!important;color:#edf4fb!important}
+.topbar{background:rgba(5,15,27,.94)!important;color:#edf4fb!important;border-bottom-color:#20384a!important}
+.sidebar{background:rgba(5,15,26,.92)!important;border-right-color:#20384a!important}
+.nav{color:#a9bdcf!important}.nav:hover,.nav.active{background:rgba(34,171,126,.18)!important;color:#f4fff9!important;border-left-color:#35c99a!important}
+.content{color:#edf4fb!important}.hero,.panel,.card,.modal-card,.notifications-panel,.global-results,.stat,.table-wrap{background:#0e2030!important;color:#edf4fb!important;border-color:#254054!important;box-shadow:0 16px 36px rgba(0,0,0,.2)!important}
+.hero{background:linear-gradient(130deg,rgba(30,117,105,.26),rgba(34,77,122,.25))!important}
+input,select,textarea{background:#091827!important;color:#edf4fb!important;border-color:#345064!important}input::placeholder,textarea::placeholder{color:#8298ad!important}
+table{color:#e6f0fa!important}thead th{background:#122c3b!important;color:#b9d8d0!important}tbody tr{border-color:#233b4d!important}tbody tr:hover{background:rgba(37,129,105,.12)!important}
+.btn.primary,.quick button,.btn.success{background:#176b45!important;color:#fff!important;border-color:#20865a!important}.btn.primary:hover,.quick button:hover{background:#218357!important}
+.btn,.mini{background:#132b3c!important;color:#dceaf6!important;border-color:#345064!important}.muted,.hero p,.section p{color:#a7bdcf!important}
+.badge{background:#18384a!important;color:#c8e6f2!important}.badge.high,.badge.critical{background:#4a202b!important;color:#ffb5c0!important}.badge.medium{background:#4a3a1c!important;color:#ffe1a0!important}.badge.low{background:#153d30!important;color:#a7f1cd!important}
+.ai-result-head,.ai-score-wrap,.ai-explanation,.ai-factors,.ai-recommendation{background:#10283a!important;color:#eaf5ff!important;border-color:#2b4b60!important}.ai-recommendation{background:#123a2c!important}.ai-disclaimer{color:#b2c4d4!important}
+.empty{color:#9db1c4!important}.modal{background:rgba(0,0,0,.68)!important}.modal-content{background:#0d1b2a!important;color:#edf4fb!important;border-color:#2a465b!important}
+/* Preserve the full-screen hospital login background and its readable light login card. */
+.login-body{background:#071d39!important}.login-card{background:rgba(248,252,255,.96)!important;color:#18334d!important}.login-card label{color:#243c55!important}.login-card input{background:#fff!important;color:#152d47!important}
+
+
+/* Suraksha Health Care — refreshed professional healthcare palette */
+:root{
+  --bg:#f3f7fb;
+  --panel:#ffffff;
+  --panel2:#edf4f8;
+  --text:#172b4d;
+  --muted:#62748a;
+  --accent:#0f9b8e;
+  --accent2:#2563eb;
+  --danger:#dc4655;
+  --border:#dce6ef;
+  --shadow:0 12px 32px rgba(24,49,79,.09)
+}
+body{background:#f3f7fb;color:var(--text)}
+.topbar{background:#102b46;color:#f7fbff;border-bottom:1px solid #24435f;box-shadow:0 3px 16px rgba(16,43,70,.12)}
+.brand-mark{background:rgba(45,212,191,.16);color:#5eead4}
+.user{color:#d6e5f2}
+.sidebar{background:#173650;border-right:1px solid #274b68}
+.nav{color:#c5d6e5}
+.nav:hover,.nav.active{background:#24516d;color:#fff;box-shadow:inset 3px 0 #34d399}
+.content{color:var(--text)}
+.hero{background:linear-gradient(125deg,#e2f4f2,#eaf1ff);border-color:#d4e5ef;box-shadow:var(--shadow)}
+.hero p,.muted{color:#62748a}
+.eyebrow{color:#087f75}
+.stat,.panel{background:#fff;border-color:#dce6ef;box-shadow:var(--shadow);color:#172b4d}
+.stat span,.panel .muted{color:#62748a}
+.quick button{background:#f1f7fa;color:#183754;border-color:#dce6ef}
+.quick button:hover{background:#e4f5f1;border-color:#a7ddd4}
+.status-ok{color:#087f75}
+.btn{border-color:#d3e0ea;background:#edf4f8;color:#183754}
+.btn.primary{background:linear-gradient(135deg,#0f9b8e,#1677b8);color:#fff;box-shadow:0 5px 12px rgba(15,155,142,.16)}
+.btn.ghost{background:transparent;color:#24445e}
+.toolbar input,.toolbar select,.compact-input,input,select,textarea{background:#fff;color:#172b4d;border-color:#d4e0ea}
+input::placeholder,textarea::placeholder{color:#8a9aad}
+th{color:#49647c}
+td{color:#233e5b}
+th,td{border-bottom-color:#e3ebf2}
+.mini{background:#eef5f8;color:#25445e;border-color:#d6e3ec}
+.mini:hover{background:#dff3ef}
+.mini.danger{color:#b42332}
+.badge{background:#edf3f7;color:#3d5871}
+.badge.scheduled,.badge.low{color:#087f75;background:#dff6f0}
+.badge.completed{color:#1d4ed8;background:#e7efff}
+.badge.cancelled,.badge.no-show,.badge.high{color:#b42332;background:#ffeaed}
+.badge.medium{color:#946200;background:#fff4d6}
+.badge.urgent,.badge.emergency{color:#fff;background:#b42332}
+.modal{background:rgba(13,35,55,.58)}
+.modal-card{background:#fff;color:#172b4d;border-color:#dce6ef;box-shadow:0 24px 70px rgba(12,34,54,.22)}
+.modal-head button,.notifications-panel button{color:#38546d}
+.form-grid label,label{color:#4b6379}
+.empty{color:#71859a}
+.detail-item,.doctor-card,.trend-card{background:#f4f8fb;border-color:#dce6ef;color:#203b56}
+.detail-item small,.timeline-item small,.timeline-item p,.doctor-card span,.doctor-list span,.trend-value span{color:#687d91}
+.timeline:before{background:#d2e2eb}
+.timeline-dot{background:#0f9b8e;border-color:#fff;box-shadow:0 0 0 2px #bce9df}
+.bar-label{color:#405b73}
+.bar-track{background:#e6eef4}
+.bar-fill{background:linear-gradient(90deg,#0f9b8e,#4f8df7)}
+.icon-btn{background:#24445e;color:#fff;border-color:#315772}
+.notifications-panel{background:#fff;color:#172b4d;border-color:#dce6ef;box-shadow:var(--shadow)}
+.notification{background:#f4f8fb;border-color:#dce6ef}
+.notification span{color:#62748a}
+.notification.warning{border-color:#f0b9bf}
+.toast{background:#173650;color:#fff;border-color:#315772}
+.global-search input{background:#fff;color:#172b4d;box-shadow:var(--shadow)}
+.global-results{background:#fff;border-color:#dce6ef}
+.global-results>div:not(.empty){background:#f3f8fb;color:#172b4d}
+.global-results span{color:#62748a}
+.doctor-list>div{background:#f0f6fa}
+.risk-score{background:#f2f8fb;border-color:#dce6ef}
+.risk-score b{background:#dff6f0;color:#087f75}
+.risk-score.medium b{background:#fff4d6;color:#946200}
+.risk-score.high b{background:#ffeaed;color:#b42332}
+.reason-list{color:#4b6379}
+.assistant-chat{background:#f0f6fa;border:1px solid #dce6ef}
+.assistant-msg.bot{background:#e3edf4;color:#183754}
+.assistant-msg.user-msg{background:linear-gradient(135deg,#0f9b8e,#2563eb);color:#fff}
+.risk-profile{color:#172b4d}
+.login-body{background:#102b46}
+.login-card{background:rgba(255,255,255,.96);color:#172b4d;border-color:rgba(255,255,255,.7);box-shadow:0 24px 80px rgba(4,22,39,.3)}
+.login-card label{color:#405b73}
+@media(max-width:760px){.sidebar{background:#173650;border-bottom-color:#274b68}.nav{color:#c5d6e5}.nav:hover,.nav.active{background:#24516d;color:#fff}}
+
+/* Suraksha Health Care accessibility refresh: light, high-contrast workspace */
+:root{
+ --bg:#f3f7fb;--panel:#ffffff;--panel2:#edf4fa;--text:#1b2b3a;--muted:#526579;
+ --accent:#087f8c;--accent2:#2864b4;--danger:#b42332;--border:#d6e1eb;
+ --shadow:0 10px 28px rgba(22,48,76,.09)
+}
+body{background:#f3f7fb!important;color:#1b2b3a!important}
+.topbar{background:#ffffff!important;border-bottom:1px solid #d6e1eb!important;backdrop-filter:none!important}
+.brand,.user{color:#18334b!important}
+.brand-mark{background:#d9f2ef!important;color:#087f8c!important}
+.sidebar{background:#eaf1f8!important;border-right:1px solid #d4e0eb!important}
+.nav{color:#334c63!important}
+.nav:hover,.nav.active{background:#d4e8fa!important;color:#104b7b!important}
+.content{color:#1b2b3a!important}
+.hero{background:linear-gradient(135deg,#e4f1ff,#e4f7f0)!important;border-color:#d4e1ec!important}
+.hero p,.muted,.empty{color:#526579!important}
+.eyebrow{color:#087f8c!important}
+.stat,.panel,.modal-card,.notifications-panel{background:#fff!important;color:#1b2b3a!important;border-color:#d6e1eb!important;box-shadow:var(--shadow)!important}
+.quick button,.mini,.icon-btn,.notification,.global-results>div:not(.empty){background:#f0f5fa!important;color:#243e55!important;border-color:#d6e1eb!important}
+.btn{background:#edf4fa!important;color:#203b53!important;border-color:#cbd9e6!important}
+.btn.primary{background:linear-gradient(135deg,#087f8c,#2864b4)!important;color:#fff!important;border:0!important}
+.btn.ghost{background:#fff!important;color:#203b53!important}
+.toolbar input,.toolbar select,.compact-input,input,select,textarea,.global-search input{background:#fff!important;color:#1b2b3a!important;border-color:#cbd8e5!important}
+input::placeholder,textarea::placeholder{color:#718398!important;opacity:1}
+th{background:#eaf3f8!important;color:#29465f!important}
+th,td{border-bottom-color:#dce5ed!important}
+td{color:#243c53!important}
+table{background:#fff!important}
+.badge{background:#e9f0f7!important;color:#334d66!important}
+.badge.scheduled,.badge.low{color:#08704e!important;background:#dff5e9!important}
+.badge.completed{color:#2056a3!important;background:#e1edff!important}
+.badge.cancelled,.badge.no-show,.badge.high{color:#a32132!important;background:#fde7e9!important}
+.badge.medium{color:#8a5500!important;background:#fff0cf!important}
+.badge.urgent,.badge.emergency{color:#fff!important;background:#b42332!important}
+.modal{background:rgba(25,42,58,.42)!important}
+.modal-head button,.notifications-panel button{color:#243e55!important}
+.form-grid label,label{color:#354f66!important}
+.detail-item{background:#f0f6fa!important;border-color:#d6e1eb!important;color:#243e55!important}
+.detail-item small,.timeline-item small{color:#526579!important}
+.timeline:before{background:#c7d7e5!important}
+.timeline-dot{border-color:#fff!important}
+.timeline-item p{color:#526579!important}
+.bar-label{color:#334c63!important}.bar-track{background:#e2ebf3!important}
+.toast{background:#173a4a!important;color:#fff!important;border-color:#255669!important}
+.global-results{background:#fff!important;border-color:#d6e1eb!important}
+.global-results span{color:#526579!important}
+.login-card{background:rgba(255,255,255,.96)!important;color:#1b2b3a!important;border-color:#d6e1eb!important}
+.status-ok{color:#08704e!important}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+
+/* Sidebar visibility and responsive navigation fix */
+.layout > .sidebar {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: stretch !important;
+  justify-content: flex-start !important;
+  gap: 5px !important;
+  width: 258px !important;
+  min-width: 258px !important;
+  flex: 0 0 258px !important;
+  height: calc(100vh - 68px) !important;
+  max-height: calc(100vh - 68px) !important;
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+  padding: 16px 12px 24px !important;
+  position: sticky !important;
+  top: 68px !important;
+  align-self: flex-start !important;
+  z-index: 15;
+}
+.layout > .sidebar .nav {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  position: relative !important;
+  flex: 0 0 auto !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  min-height: 42px !important;
+  height: auto !important;
+  margin: 0 !important;
+  padding: 11px 13px !important;
+  text-align: left !important;
+  white-space: normal !important;
+  line-height: 1.4 !important;
+  color: #334c63 !important;
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 10px !important;
+  box-shadow: none;
+}
+.layout > .sidebar .nav:hover {
+  background: #dcecf8 !important;
+  color: #164b75 !important;
+}
+.layout > .sidebar .nav.active {
+  background: #d5e9f8 !important;
+  color: #123f66 !important;
+  box-shadow: inset 4px 0 #087f8c !important;
+  font-weight: 800 !important;
+}
+@media (max-width: 760px) {
+  .layout > .sidebar {
+    position: relative !important;
+    top: auto !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    height: auto !important;
+    max-height: 42vh !important;
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    align-content: start !important;
+    gap: 6px !important;
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+    padding: 10px !important;
+    background: #eaf1f8 !important;
+    border-right: 0 !important;
+    border-bottom: 1px solid #d4e0eb !important;
+  }
+  .layout > .sidebar .nav {
+    width: 100% !important;
+    min-width: 0 !important;
+    min-height: 44px !important;
+    padding: 10px !important;
+    font-size: 13px !important;
+    overflow-wrap: anywhere !important;
+  }
+  .content { min-width: 0 !important; }
+}
